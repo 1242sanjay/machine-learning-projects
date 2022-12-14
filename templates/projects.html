@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../static/projects.css">
+
+{% include "header.html" %}
+
+
+<div class="container">
+  <h2>Web Scrapping Projects</h2>
+  <div class="cardsection">
+    {% for i in range(4) %}
+    <div class="card">
+      <a href="#"><img src="https://w0.peakpx.com/wallpaper/563/1008/HD-wallpaper-priyanka-chopra-actress-indian-celebrity-heroine.jpg" alt="Priyanka Chopra" width="220" height="220">
+      <p>Scraping Oscar winning movies from IMDB</p></a>
+    </div>
+    {% endfor %}
+  </div>
+  <hr>
+
+
+  
+  <h2>Exploratory Data Analysis Projects</h2>
+  <div class="cardsection">
+    {% for i in range(4) %}
+    <div class="card">
+      <a href="#"><img src="https://w0.peakpx.com/wallpaper/563/1008/HD-wallpaper-priyanka-chopra-actress-indian-celebrity-heroine.jpg" alt="Priyanka Chopra" width="220" height="220">
+      <p>EDA of Indian Cities House Pricing Datasets</p></a>
+    </div>
+    {% endfor %}
+  </div>
+  <hr>
+
+  
+  
+  <h2>Machine Learning Projects</h2>
+  <div class="cardsection">
+    {% for i in range(4) %}
+    <div class="card">
+      <a href="#"><img src="https://w0.peakpx.com/wallpaper/563/1008/HD-wallpaper-priyanka-chopra-actress-indian-celebrity-heroine.jpg" alt="Priyanka Chopra" width="220" height="220">
+      <p>Heart Disease Prediction using Machine Learning</p></a>
+    </div>
+    {% endfor %}
+  </div>
+  <hr>
+
+
+  
+  <h2>Deep Learning Projects</h2>
+  <div>
+    Hi this is deep learning project section.
+  </div>
+  <hr>
+</div>
+
+{% include "footer.html" %}

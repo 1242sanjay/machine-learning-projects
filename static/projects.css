@@ -1,0 +1,46 @@
+.container{
+  width:75vw;
+  margin:auto;
+}
+
+
+h2{
+  margin-top:20px;
+  margin-bottom:10px;
+  color:green;
+}
+
+.card{
+  width:250;
+  height:300;
+  border:solid green 2px;
+  border-radius:5px;
+}
+
+.card img{
+  padding:15px;
+}
+
+.card p{
+  padding:5px;
+  text-align:center;
+}
+
+.card a{
+  text-decoration:none;
+  color:green;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.card a:hover{
+  text-decoration:underline;
+}
+
+
+.cardsection{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:10px;
+  margin-bottom:20px;
+}

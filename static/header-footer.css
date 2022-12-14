@@ -1,0 +1,77 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+header{
+  background:green;
+}
+
+.top{
+  display:flex;
+  justify-content:space-between;
+}
+
+.toplist{
+  list-style:none;
+  display:flex;
+  margin:5px;
+}
+
+.toplist li{
+  margin:5px;
+}
+
+nav a:hover{
+  font-weight:bold;
+}
+
+.toplist button{
+  padding:5px;
+  border:solid white 2px;
+  border-radius:5px;
+  background:green;
+  color:white;
+  font-size:14px;
+}
+
+.toplist button:hover{
+  border:solid green 2px;
+  border-radius:5px;
+  background:white;
+  color:green;
+  font-size:14px;
+  transition:1s;
+}
+
+
+.logo{
+  font-size:250%;
+  color:white;
+  font-family:Segoe Print;
+}
+
+
+header nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+}
+
+header nav ul li{
+  margin:5px;
+  padding:5px;
+}
+
+header nav ul li a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+}
+
+.footer-text{
+  display:flex;
+  justify-content:center;
+  font-size:18px;
+  color:white;
+}
