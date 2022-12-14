@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../static/recommend.css">
+
+<div class="container">
+  <form action="/recommend_book" method='post'>
+    <div>
+  <input type="text" name='user_input' class="form-control" placeholder="name" aria-label="name">
+  <button type="submit" class="btn btn-primary">Recommend</button>
+    </div>
+  </form>
+
+  <div class="cardcontainer">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+      {% for i in range(book_title | length) %}
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="{{book_image[i]}}" width="300" height="325">
+            <div class="card-body">
+              <b class="card-text">{{book_title[i]}}</b>
+              <p class="card-text">{{book_author[i]}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+<!--                 <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{{ "%0.1f" | format(rating[i] | float) }} ⭐</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{{votes[i]}} 👍</button>
+                </div> -->
+                <small class="text-muted">Read</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+
+  
+</div>

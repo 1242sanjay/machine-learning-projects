@@ -1,0 +1,19 @@
+form{
+  width:50vw;
+}
+
+form div{
+  display:flex;
+  gap:10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  form {
+    width:80vw;
+  }
+}
+
+.cardcontainer{
+  margin-top:20px;
+}

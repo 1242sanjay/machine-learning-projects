@@ -1,0 +1,34 @@
+.container{
+  width:75vw;
+  margin:auto;
+}
+
+
+h2, h3{
+  margin-top:20px;
+  margin-bottom:10px;
+  color:green;
+}
+
+ .cardcontainer img{
+  padding:15px;
+   display:flex;
+   margin:auto;
+}
+
+/*
+.card{
+  width:250;
+  height:350;
+  margin:20px;
+  border:solid green 2px;
+  border-radius:5px;
+}
+
+.card img{
+  padding:10px;
+}
+
+.card p{
+  padding:10px;
+} */
