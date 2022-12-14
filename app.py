@@ -38,8 +38,13 @@ def recommend_book():
   return render_template('recommendation.html',
                          book_title=book_dict['book_title'],
                          book_author=book_dict['book_author'],
-                         book_image=book_dict['book_image'])
+                         book_image=book_dict['book_image'],
+                         book_name=list(popular_df['Book-Title'].values),
+                         author=list(popular_df['Book-Author'].values),
+                         image=list(popular_df['Image-URL-M'].values),
+                         votes=list(popular_df['num_rating'].values),
+                         rating=list(popular_df['avg_rating'].values))
 
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', debug=True)
+  app.run(host='0.0.0.0')

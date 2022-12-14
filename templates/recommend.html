@@ -4,11 +4,16 @@
   <form action="/recommend_book" method='post'>
     <div>
   <input type="text" name='user_input' class="form-control" placeholder="name" aria-label="name">
-  <button type="submit" class="btn btn-primary">Recommend</button>
+  <button type="submit" class="btn btncolor">Recommend&nbsp;Book</button>
+  <a class="btn btncolor" href="https://medium.com/@dsaiandmldl" target="_blank">See&nbsp;Blog&nbsp;Post</a>
+  <a class="btn btncolor" href="https://jovian.ai/1242sanjay/book-recommender-system" target="_blank">View&nbsp;Notebook</a>
+  <a class="btn btncolor" href="https://github.com/1242sanjay/machine-learning-projects" target="_blank">Source&nbsp;Code</a>
     </div>
   </form>
 
   <div class="cardcontainer">
+    {% if book_title %}
+    <h3>Recommended Books</h3>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
       {% for i in range(book_title | length) %}
         <div class="col">
@@ -16,12 +21,9 @@
            <img src="{{book_image[i]}}" width="300" height="325">
             <div class="card-body">
               <b class="card-text">{{book_title[i]}}</b>
-              <p class="card-text">{{book_author[i]}}</p>
+              <p class="card-text">Written by- {{book_author[i]}}</p>
               <div class="d-flex justify-content-between align-items-center">
-<!--                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">{{ "%0.1f" | format(rating[i] | float) }} ⭐</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">{{votes[i]}} 👍</button>
-                </div> -->
+               
                 <small class="text-muted">Read</small>
               </div>
             </div>
@@ -29,6 +31,7 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
   </div>
 
 
